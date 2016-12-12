@@ -8,8 +8,10 @@ version 1.0, December 12, 2016
 --------
 This package is written by:
 
-Ladislav Peska
+Ladislav Peska,
+
 Dept. of Software Engineering, Charles University in Prague, Czech Republic
+
 Email: peska@ksi.mff.cuni.cz
 
 This package is based on the PyDTI package by Yong Liu,
