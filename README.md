@@ -1,4 +1,7 @@
-# BRDTI -- a Python library for Bayesian Ranking Prediction of Drug-Target Interactions
+# BRDTI 
+--------
+Python library for Bayesian Ranking Prediction of Drug-Target Interactions
+--------
 
 version 1.0, December 12, 2016
 
