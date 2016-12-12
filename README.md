@@ -14,8 +14,17 @@ Dept. of Software Engineering, Charles University in Prague, Czech Republic
 
 Email: peska@ksi.mff.cuni.cz
 
+Furthre information can be found on:
+http://www.ksi.mff.cuni.cz/~peska/BRDTI
+
+-------
 This package is based on the PyDTI package by Yong Liu,
 https://github.com/stephenliu0423/PyDTI
+
+This package also uses Rank metrics implementation by Brandyn White (included as rank_metrics.py)
+
+BRDTI implementation is based on the BPR implementation by Mark Levy, 
+https://github.com/gamboviol/bpr
 
 --------
 BRDTI works on Python 2.7 (tested on Intel Python 2.7.12).
