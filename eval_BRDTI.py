@@ -53,7 +53,7 @@ def main(argv):
     if (method == 'brdti') | (method == 'inv_brdti') :
         args = {
             'D':100,
-            'learning_rate':0.05,
+            'learning_rate':0.1,
             'max_iters' : 100,   
             'simple_predict' :False, 
             'bias_regularization':1,                 
