@@ -129,7 +129,7 @@ class newDTIPrediction:
             self.targets_ndcg.append(ndcg_t)
             recall_t = sum(hit_list)/float(total_known_DTI) if total_known_DTI > 0 else float('nan')
             self.targets_recall.append(recall_t)
-            self.eval_targets = (drug,sum(hit_list),min(total_known_DTI,len(hit_list)),ndcg_t,recall_t,total_known_DTI)
+            self.eval_targets = (target,sum(hit_list),min(total_known_DTI,len(hit_list)),ndcg_t,recall_t,total_known_DTI)
              
     def ndcg(self,hit_list,total_known_DTI):
         if total_known_DTI == 0:
