@@ -23,6 +23,10 @@ def load_data_from_file(dataset, folder):
     intMat = np.array(int_array, dtype=np.float64).T    # drug-target interaction matrix
     drugMat = np.array(drug_sim, dtype=np.float64)      # drug similarity matrix
     targetMat = np.array(target_sim, dtype=np.float64)  # target similarity matrix
+
+    if dataset == "metz":
+        intMat[intMat == -1] = 0
+    
     return intMat, drugMat, targetMat
 
 

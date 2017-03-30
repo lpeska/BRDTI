@@ -27,7 +27,7 @@ class CombinedApproach(object):
         self.dataset = args["dataset"]
         self.cvType = args["cvType"]
         
-        self.methods = ["blmnii","wnngip","netlaprls","cmf"]#,"knn_bprcasq","knn_inv_bprcasq"
+        self.methods = ["blmnii","wnngip","netlaprls","cmf"]#,"brdti"
 
     
     def evaluate(self):        
@@ -77,8 +77,7 @@ class CombinedApproach(object):
         output_dir = 'output'         
         write_metric_vector_to_file(auc_arr, os.path.join(output_dir, "combined_auc_cvs"+str(self.cvType)+"_"+self.dataset+".txt"))
         write_metric_vector_to_file(aupr_arr, os.path.join(output_dir, "combined_aupr_cvs"+str(self.cvType)+"_"+self.dataset+".txt"))            
-        write_metric_vector_to_file(ndcg_arr, os.path.join(output_dir, "combined_ndcg_cvs"+str(self.cvType)+"_"+self.dataset+".txt"))
-        write_metric_vector_to_file(ndcg_inv_arr, os.path.join(output_dir, "combined_ndcg_inv_cvs"+str(self.cvType)+"_"+self.dataset+".txt"))        
+        write_metric_vector_to_file(ndcg_arr, os.path.join(output_dir, "combined_ndcg_cvs"+str(self.cvType)+"_"+self.dataset+".txt"))    
                  
         print np.mean(auc_arr),np.mean(aupr_arr),np.mean(ndcg_arr),np.mean(ndcg_inv_arr)
         

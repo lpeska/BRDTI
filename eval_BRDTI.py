@@ -180,13 +180,8 @@ def main(argv):
             
 
 if __name__ == "__main__":  
-
-    """    
-    main(['--method=blmnii', '--dataset=gpcr', '--cvs=1', '--specify-arg=0'])
-    main(['--method=blmnii', '--dataset=gpcr', '--cvs=2', '--specify-arg=0'])
-    main(['--method=blmnii', '--dataset=gpcr', '--cvs=3', '--specify-arg=0'])
-    
-    
+      
+    """  
+    main(['--method=blmnii', '--dataset=davis', '--cvs=1', '--specify-arg=1', '--method-opt=alpha=0.6' ])    
     main(['--method=brdti', '--dataset=gpcr', '--cvs=1', '--specify-arg=0'])
-    main(['--method=inv_brdti', '--dataset=gpcr', '--cvs=1', '--specify-arg=0'])
     """    
